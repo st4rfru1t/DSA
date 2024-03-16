@@ -25,9 +25,9 @@ public class Search {
 
         if (arr[element] == arr[middle]) {
             return true;
-        } else if (element < middle) {
+        } else if (arr[middle] < element) {
             return binarySearch(arr, element, middle+1, end);
-        } else if (element > middle) {
+        } else if (arr[middle] > element) {
             return binarySearch(arr, element, start, middle-1);
         }
 
