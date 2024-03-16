@@ -27,10 +27,10 @@ public class Search {
             return true;
         } else if (element < middle) {
             return binarySearch(arr, element, middle+1, end);
-        } else if (element < middle) {
+        } else if (element > middle) {
             return binarySearch(arr, element, start, middle-1);
         }
-        
+
         return false;
 
     }
